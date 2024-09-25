@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет сторінки</title>
+      <link rel="stylesheet" href="styles.css">
+</head>
+      <body>
+          <header>
+              <h1>Макет</h1>
+              <nav>
+                  <ul>
+                      <li><a href="index.html">Головна</a></li>
+                      <li><a href="about.html">Про мене</a></li>
+                      <li><a href="contacts.html">Контакти</a></li>
+                      <li><a href="maket.html">Макет</a></li>
+                      <li><a href="robota.html">Моє резюме</a></li>
+                  </ul>
+              </nav>
+          </header>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+            width: 80%;
+            height: 80vh;
+            background-color: #357ae8;
+            padding: 20px;
+        }
+
+        .container div {
+            background-color: #6aa4ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .photo {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .content1 {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .content2 {
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 1;
+        }
+
+        .content3 {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+        }
+
+        .content4 {
+            grid-column: 2 / span 1;
+            grid-row: 3 / span 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">Photo</div>
+        <div class="content1">Content</div>
+        <div class="content2">Content</div>
+        <div class="content3">Content</div>
+        <div class="content4">Content</div>
+  </div>
+  <footer>
+      <p>&copy; 2024 Пілецька Ліана</p>
+  </footer>
+</body>
+</html>
